@@ -1,10 +1,9 @@
-import os
 import requests
 from bs4 import BeautifulSoup
 import google.generativeai as genai
 
-# Configure Gemini API
-genai.configure(api_key=os.environ["GEMINI_API_KEY"])
+# Directly configure the Gemini API key
+genai.configure(api_key="AIzaSyC0ecScQmY0pvJlkiFB3w6VFI9bWrVCDsM")
 
 generation_config = {
     "temperature": 1,
