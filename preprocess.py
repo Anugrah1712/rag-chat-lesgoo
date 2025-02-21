@@ -7,7 +7,9 @@ from langchain.docstore.document import Document as LangchainDocument
 import requests
 from bs4 import BeautifulSoup
 import faiss
+from dotenv import load_dotenv
 
+load_dotenv()
 
 def extract_text_from_pdf(file):
     paragraphs = []
